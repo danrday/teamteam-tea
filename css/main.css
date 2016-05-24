@@ -1,0 +1,66 @@
+/******** CONTAINER STYLES ***********/
+#contentContainer {
+	width: 70%;
+	margin: auto;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#contentContainer article {
+
+}
+
+/*********/
+
+
+#featuredProductDesc {
+	width: 49%;
+}
+
+#featuredProduct {
+	float: right;
+	width: 49%;
+}
+
+#featuredProduct > * {
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+
+#featuredProductImg {
+	width: 75%;
+	padding: 5px;
+}
+
+#featuredProduct button {
+	display: block;
+	padding: 5px;
+
+}
+
+@media (max-width: 800px){
+	#contentContainer {
+		width: 90%
+	}	
+}
+
+@media (max-width: 600px) {
+	#featuredProduct {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	#featuredProductDesc {
+		float: none;
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
