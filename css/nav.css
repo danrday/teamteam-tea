@@ -103,6 +103,36 @@ nav li:active {
 
 /*responsive mobile menu*/
 
+@keyframes slidein {
+  from {
+    margin-left: -50%;
+    width: -50%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: -100%;
+    width: -100%;
+  }
+}
+
+
+
+/*responsive mobile menu*/
+
 #nav
 {
     /* container */
@@ -145,18 +175,9 @@ nav li:active {
 
         @media only screen and ( max-width: 40em ) /* 640 */
 {
-
-    #mobileMenu {
-     
-    
-      display: inline-block;
-    }
-
     #nav
     {
         position: relative;
-        
-
     }
         #nav > a
         {
@@ -215,6 +236,3 @@ nav li:active {
   display: inline-block;
 
 }
-
-
-
