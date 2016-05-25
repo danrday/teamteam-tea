@@ -19,11 +19,11 @@ nav {
   padding-right: 12px;
 }
 
-nav li:nth-child(odd) {
+ul > :first-child > a {
   border-left: 2px solid #24442b;
 }
 
-nav ul:last-child {
+ul li a {
   border-right: 2px solid #24442b;
 }
 
@@ -41,7 +41,6 @@ nav ul {
 nav ul li {
   list-style: none;
   display: inline-block;
-  padding: 20px;
   font-size: 16px;
 }
 
@@ -50,21 +49,21 @@ nav li a {
   font-size: 1em;
 }
 
-nav a:link,
-nav a:visited {
+nav li a {
+  padding: 20px;
+}
+
+nav li a:link,
+nav li a:visited {
   color: #34623E;
 }
 
-nav li:hover {
+nav li a:hover {
   background: #34623E;
   color: #8EC4A3;
 }
 
-nav li:active {
+nav li a:active {
   padding: 25px;
 }
 
-.selected {
-  background: #34623E;
-  color: #8EC4A3;
-}
