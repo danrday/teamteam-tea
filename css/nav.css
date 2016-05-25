@@ -128,8 +128,27 @@ nav li:active {
         }
 
 
+
+ @media only screen and ( max-width: 966px ) {
+      nav {
+        padding-bottom: 20px;
+
+ }
+
+
+ @media only screen and ( max-width: 700px ) {
+  
+        nav ul li {
+        /*  font-size: 14px;*/
+          padding: 10px;
+ }
+
         @media only screen and ( max-width: 40em ) /* 640 */
 {
+
+nav {
+  padding-bottom: 0;
+}
     
 #nav ul {
   margin-top: 50px;
