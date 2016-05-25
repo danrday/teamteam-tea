@@ -1,3 +1,4 @@
+var contentElement = document.getElementById("contentContainer");
 var productArray = [
 
   {
@@ -74,3 +75,13 @@ var productArray = [
   }
 
 ];
+
+for (let i = 0; i < productArray.length; i++) {
+    contentElement.innerHTML += `<div class="product">
+      <img src="${productArray[i].productURL}">
+      <p>${productArray[i].name}</p>
+      <p>${productArray[i].description}</p>
+      <p>${productArray[i].price}</p>
+     </div>`;
+}
+
