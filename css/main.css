@@ -12,24 +12,46 @@
 /*********/
 
 
-#featuredProductDesc {
+#featuredProductDesc,
+section.employeeInfo {
 	width: 49%;
 }
 
-#featuredProduct {
+#featuredProduct{
 	float: right;
 	width: 49%;
 }
 
-#featuredProduct > * {
+#featuredProduct > *{
 	margin: auto;
 	display: block;
 	text-align: center;
 }
 
-#featuredProductImg {
+.employeeBlurb{
+	float: right;
+	clear: both;
+	margin: auto;
+	display: block;
+	text-align: left;
+}
+
+.employeeInfo p,
+.employeeInfo h4 {
+	margin: 1px auto;
+}
+
+#featuredProductImg, 
+.employeeHeadShot{
 	width: 75%;
 	padding: 5px;
+}
+
+.employeeHeadShot {
+	height: 250px;
+	width: 250px;
+	float: right;
+	
 }
 
 #featuredProduct button {
@@ -45,12 +67,14 @@
 }
 
 @media (max-width: 600px) {
-	#featuredProduct {
+	#featuredProduct,
+	.employeeBlurb {
 		float: none;
 		display: block;
 		width: 100%;
 	}
-	#featuredProductDesc {
+	#featuredProductDesc,
+	.employeeBlurb {
 		float: none;
 		width: 100%;
 	}
