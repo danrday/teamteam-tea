@@ -78,9 +78,13 @@ var productArray = [
 
 for (let i = 0; i < productArray.length; i++) {
     contentElement.innerHTML += `<div class="product">
-      <img src="${productArray[i].productURL}">
-      <p>${productArray[i].name}</p>
-      <p>${productArray[i].description}</p>
+      <div class="productImageContainer">
+        <img src="${productArray[i].productURL}">
+      </div>
+      <p class="productTitle">${productArray[i].name}</p>
+      <div class="productDescription">
+        <p>${productArray[i].description}</p>
+      </div>
       <p>${productArray[i].price}</p>
      </div>`;
 }
