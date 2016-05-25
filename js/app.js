@@ -76,7 +76,7 @@ var productArray = [
 
 ];
 
-for (let i = 0; i < productArray.length; i++) {
+for (var i = 0; i < productArray.length; i++) {
     contentElement.innerHTML += `<div class="product">
       <div class="productImageContainer">
         <img src="${productArray[i].productURL}">
