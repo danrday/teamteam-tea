@@ -70,68 +70,23 @@ nav li:active {
 }
 
 
-/* Dan added: */
-
-
-@keyframes slidein {
-  from {
-    margin-left: -50%;
-    width: -50%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-
-@keyframes slideout {
-  from {
-    margin-left: 0%;
-    width: 100%; 
-  }
-
-  to {
-    margin-left: -100%;
-    width: -100%;
-  }
-}
-
-
-
 /*responsive mobile menu*/
 
 @keyframes slidein {
   from {
-    margin-left: -50%;
-    width: -50%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-
-@keyframes slideout {
-  from {
-    margin-left: 0%;
+    margin-left: 100%;
     width: 100%; 
   }
 
   to {
-    margin-left: -100%;
-    width: -100%;
+    margin-right: 100%;
+    width: 100%;
   }
 }
 
-
-
-/*responsive mobile menu*/
+#contentContainer {
+  clear: both;
+}
 
 #nav
 {
@@ -175,12 +130,36 @@ nav li:active {
 
         @media only screen and ( max-width: 40em ) /* 640 */
 {
+    
+#nav ul {
+  margin-top: 50px;
+  border-right: none;
+
+}
+
+#nav ul li {
+ clear: both;
+  list-style: none;
+  display: block;
+  padding: 10px;
+  float: right;
+  font-size: 16px;
+  text-align: left;
+  background-color: white;
+  width: 30%;
+}
+
+    #imageContainer {
+      float: left;
+    }
+
     #nav
     {
-        position: relative;
+      
     }
         #nav > a
         {
+          float: right;
         }
         #nav:not( :target ) > a:first-of-type,
         #nav:target > a:last-of-type
@@ -198,16 +177,11 @@ nav li:active {
         left: 0;
         right: 0;
 
-  /*added slide out */
-     /*   animation-duration: 1s;
-        animation-name: slideout; */
-
 
     }
         #nav:target > ul
         {
-            display: block;
-
+            display: inline-block;
 
   /*added slide in */
 
@@ -216,23 +190,13 @@ nav li:active {
 
   }
 
-        #nav > ul > li
-        {
-            width: 100%;
-            float: none;
-        }
- 
-    /* second level */
- 
-    #nav li ul
-    {
-        position: static;
-    }
 }
 
 .hamburger {
   height: 2em;
-  position: relative;
-  display: inline-block;
+  float: right;
+  /*position: relative;*/
+  padding-right: 10px;
+  margin-top: 20px;
 
 }
