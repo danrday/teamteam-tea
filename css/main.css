@@ -1,8 +1,13 @@
+/******** BODY STYLES ***********/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
 /******** CONTAINER STYLES ***********/
 #contentContainer {
 	width: 70%;
 	margin: auto;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #contentContainer article {
@@ -51,7 +56,7 @@ section.employeeInfo {
 	height: 250px;
 	width: 250px;
 	float: right;
-	
+
 }
 
 #featuredProduct button {
