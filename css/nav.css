@@ -71,7 +71,7 @@ nav li:active {
 
 
 /*responsive mobile menu*/
-
+/*
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -79,10 +79,50 @@ nav li:active {
   }
 
   to {
-    margin-right: 100%;
+    margin-left: 0%;
     width: 100%;
   }
+}*/
+
+
+/* Chrome, Safari, Opera */ 
+/*@-webkit-keyframes slidein {
+    from {right: -150px;}
+    to {right: 0px;}
+} 
+
+@keyframes slidein {
+  from {
+    right: -150px;
+  
+  }
+
+  to {
+    right: 0px;
+  
+  }
+}*/
+
+/*responsive mobile menu*/
+
+@-webkit-keyframes slidein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
+@-moz-keyframes slidein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes slidein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slidein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 
 #contentContainer {
   clear: both;
@@ -92,18 +132,20 @@ nav li:active {
 {
     /* container */
 }
+
+
+  /* !!!! code below hides the second hamburger */
     #nav > a
     {
         display: none;
     }
-    #nav li
+ /*   #nav li
     {
         position: relative;
-    }
+    }*/
  
     /* first level */
- 
-    #nav > ul
+/*    #nav > ul
     {
         height: 3.75em;
     }
@@ -113,10 +155,10 @@ nav li:active {
             height: 100%;
             float: left;
         }
- 
+ */
     /* second level */
  
-    #nav li ul
+ /*   #nav li ul
     {
         display: none;
         position: absolute;
@@ -125,7 +167,7 @@ nav li:active {
         #nav li:hover ul
         {
             display: block;
-        }
+        }*/
 
 
 
@@ -136,7 +178,7 @@ nav li:active {
  }
 
 
- @media only screen and ( max-width: 700px ) {
+ @media only screen and ( max-width: 715px ) {
   
         nav ul li {
         /*  font-size: 14px;*/
@@ -151,16 +193,17 @@ nav {
 }
     
 #nav ul {
-  margin-top: 50px;
+  margin-top: 60px;
   border-right: none;
 
 }
 
 #nav ul li {
- clear: both;
+  font-weight: bold;
+  clear: both;
   list-style: none;
-  display: block;
-  padding: 10px;
+  /*display: block;*/
+  padding: 18px;
   float: right;
   font-size: 16px;
   text-align: left;
@@ -172,10 +215,10 @@ nav {
       float: left;
     }
 
-    #nav
+   /* #nav
     {
       
-    }
+    }*/
         #nav > a
         {
           float: right;
